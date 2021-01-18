@@ -6,19 +6,122 @@
     font-style: normal;
 }
 
+
+
 body{
     height: 100vh;
     margin:0;
     font-family: 'coolvetica', 'Verdana', 'Arial';
-    background-color: aquamarine;
+    background-color: #d1d1d1;
 }
 
 ul{
     list-style-type: none;
     text-decoration: none;
+    display: flex;
+    color: #44565b;
+/* nav bar spalva nepasikeicia,atkreipiti dms,istrinti papildomas color komandas */
+    
+    
     margin: 0;
     padding: 0;
 }
+.menu{
+    color: #44565b;
+    font-size: 30px;
+   
+    
+}
+nav li {
+    display: inline-block;
+    height: 100%;
+    padding: 13px;
+}
+   
+/*font size random, logo irgi random, reikes pastumdyti dydzius.spalv nepasikeite*/
+li{
+    color: #44565b;
+
+}
 a{
     text-decoration: none;
+}
+
+img{
+    width: 100%;
+} 
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+ .logo-left{
+    height: 20px;
+    padding: 0em 0em 0em 2em;
+    }
+
+    .name-color{
+        color: #89a3a0;
+    }
+  
+  h1{
+      color: #5c7878;
+      font-size: 110px;
+      line-height: 0.9;
+  }
+  .wannabe{
+      color:#44565b;
+      font-size: 30px;
+      position: relative;
+      bottom: 2.2em;
+    
+     
+  }
+  
+  .profile-pic{
+      display: inline-flex;
+      float: right;
+      width: 400px;
+      padding: 1em 4em 0em 15em;
+      position:relative;
+      bottom: -4em;
+     
+
+  }
+  .hero{
+      display: inline-flex;
+     
+  }
+.content{
+    padding: 0em 4em;
+
+}
+
+.home-container{
+    background-image: url("home.png");
+    background-color: #d1d1d1;
+    max-height: 768px;
+    height: 100%
+}
+
+.about{
+    background-image: url("mystory.png");
+    background-color: #9aa6a6;
+}
+
+.skills{
+    background-image: url("skills.png");
+    background-color: #d1d1d1;
+}
+
+.portfolio{
+    background-image: url("portfolio.png");
+    background-color: #44565b;
+}
+
+.contact{
+    background-image: url("contact.png");
+    background-color: #576b6b;
 }
