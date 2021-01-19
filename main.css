@@ -10,9 +10,10 @@
 
 body{
     height: 100vh;
-    margin:0;
+    margin:0 auto;
     font-family: 'coolvetica', 'Verdana', 'Arial';
     background-color: #d1d1d1;
+    
 }
 
 ul{
@@ -28,7 +29,7 @@ ul{
 }
 .menu{
     color: #44565b;
-    font-size: 30px;
+    font-size: 24px;
    
     
 }
@@ -39,7 +40,7 @@ nav li {
 }
    
 /*font size random, logo irgi random, reikes pastumdyti dydzius.spalv nepasikeite*/
-li{
+li a{
     color: #44565b;
 
 }
@@ -54,12 +55,12 @@ img{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 3em 9em;
 }
 
  .logo-left{
-    height: 20px;
-    padding: 0em 0em 0em 2em;
+     width:  45px;
+ 
     }
 
     .name-color{
@@ -70,12 +71,15 @@ header{
       color: #5c7878;
       font-size: 110px;
       line-height: 0.9;
+      padding: 0 0 0 0.7em;
   }
+
   .wannabe{
       color:#44565b;
       font-size: 30px;
       position: relative;
       bottom: 2.2em;
+      padding: 0 0 0 2.6em;
     
      
   }
@@ -83,10 +87,12 @@ header{
   .profile-pic{
       display: inline-flex;
       float: right;
-      width: 400px;
-      padding: 1em 4em 0em 15em;
-      position:relative;
-      bottom: -4em;
+      width: 470px;
+      position: absolute;
+      right: 8em;
+      bottom: 0;
+
+      /*kai pasikeite postion absolute, gal nereikia display inline flex? paziuret,ar ne per daug kodo */
      
 
   }
@@ -96,32 +102,86 @@ header{
   }
 .content{
     padding: 0em 4em;
+    /*suziuret kitus,virsuj esancius paddingus*/
 
 }
 
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #44565b;
+    border-right: 1px solid #44565b;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.box span:nth-child(2){
+    animation-delay: -0.2s;
+}
+
+.box span:nth-child(3){
+    animation-delay: -0.4s;
+}
+
+
+
+
+@keyframes animate{
+    0%
+    {
+        opacity: 0;
+        transform:rotate(45deg) translate(-20px,-20px);
+
+    }
+    50%{
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 0;
+        transform:rotate(45deg) translate(20px,20px);
+
+    }
+}
 .home-container{
-    background-image: url("home.png");
+    background-image: url(home.jpg);
     background-color: #d1d1d1;
     max-height: 768px;
     height: 100%
 }
 
 .about{
-    background-image: url("mystory.png");
+    background-image: url(mystory.jpg);
     background-color: #9aa6a6;
+    max-height: 768px;
+    height: 100%
 }
 
 .skills{
-    background-image: url("skills.png");
+    background-image: url(skills.jpg);
     background-color: #d1d1d1;
+    max-height: 768px;
+    height: 100%
 }
 
 .portfolio{
-    background-image: url("portfolio.png");
+    background-image: url(portfolio.jpg);
     background-color: #44565b;
+    max-height: 768px;
+    height: 100%
 }
 
 .contact{
-    background-image: url("contact.png");
+    background-image: url(contact.jpg);
     background-color: #576b6b;
+    max-height: 768px;
+    height: 100%
 }
