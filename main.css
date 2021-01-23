@@ -120,6 +120,23 @@ header{
     /*suziuret kitus,virsuj esancius paddingus*/
 
 }
+/*.wannabe p::before, .content h1::before, .name-color::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    -webkit-transition: 0.5s;
+}
+
+.wannabe p:hover::before, .content h1:hover::before, .name-color:hover::before{
+height: 100%;
+}
+
+Sita dalis is online mentor web tutorial. bet maciau html faile animation js prisegta,gal del to neveikia.
+*/ 
 
 #scrolldown {
     padding-top: 60px;
@@ -398,7 +415,7 @@ header{
     padding: 0.5em;
 }
 
-.cv s:hover{
+.cv a:hover{
     background-color: #44565b;
     color: #d1d1d1;
     /*neveikia */
@@ -435,15 +452,98 @@ header{
     max-height: 100vh;
     height: 100%
 }
+.contact-container{
+   
+    position: absolute;
+    padding: 1em;
+    margin: 0.2em 20em;
+    columns: 2;
+    color: #d1d1d1;
+    font-size: 18px;
+
+}
+
+.contact-left{
+    display:block;
+    position: absolute;
+    text-align: justify;
+    padding: 1em 10em 0em 0em;
+    margin: 1em 5em 1em 1em;
+    left:1.8em;
+    top:1.2em;
+    float: left;
+}
+
+.left-phone p{
+    left:1em;
+    top:3em;
+    float: left; 
+}
+.left-email p{
+    left:1em;
+    top:3em;
+    float: left;
+
+}
+.contact-right{
+    display: block;
+    position: absolute;
+    width: 200px;
+    left: 21em;
+    top: 4em;
+    float: right;
+}
+
+.input-field{
+    width: 270px;
+    height: 30px;
+    margin-top: 1.5em;
+    padding-top:0.6em;
+    border: 1px solid #89a3a0;
+    border-radius: 8px;
+    outline: none;
+    background: transparent;
+    padding-top: 0.3em;
+    box-shadow: 0px 0px 4px #304b4b; 
+
+
+}
+
+.textarea-field{
+    height: 100px;
+}
+.form-group input, .form-group textarea {
+    color: #d1d1d1;
+    opacity: 90%;
+    padding-left: 0.8em;
+}
+::placeholder{
+    color: #d1d1d1;
+}
+.btn{
+    border: 1px solid #89a3a0;
+    width: 100px;
+    height: 30px;
+    margin-top: 1.5em;
+    color: #d1d1d1;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: 0px 0px 5px #304b4b; 
+
+}
+.btn:hover{
+    background-color: #5c7878;
+}
 
 .postcard{
-    position: relative;
-    background-image: url(postcard.png);
+    position: absolute;
+   /* background-image: url(kk.png); */
     width: 745px ;
     height: 420px;
-    margin: 1em;
-    bottom: 1em;
-    box-shadow: 0px 0px 10px #5c7878; 
+    margin: 0.1em;
+   /* padding: 10em 0em 0em 0em; */
+   top: 0.001em;
+    box-shadow: 0px 0px 7px #304b4b; 
 } 
 
 /*
@@ -462,32 +562,3 @@ header{
 }
 */
 
-.contact-container{
-
-    
-    position: absolute;
-    text-align: justify;
-    padding: 1em;
-    margin: 0.2em 17em;
-    columns: 2;
-    color: #d1d1d1;
-    font-size: 20px;
-}
-
-.contact-left{
-    display:block;
-    padding: 1em 10em 0em 0em;
-    margin: 1em 5em 1em 1em;
-    left:1em;
-    top:3em;
-    float: left;
-}
-
-.left-phone p{
-    left:1em;
-    top:3em;
-    float: left; 
-}
-.contact-right{
-    float: right;
-}
