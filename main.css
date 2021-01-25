@@ -6,7 +6,9 @@
     font-style: normal;
 }
 
-
+/*html{
+    scroll-behavior: smooth;
+} */
 
 body{
     height: 100vh;
@@ -20,15 +22,19 @@ ul{
     list-style-type: none;
     text-decoration: none;
     color: #44565b;
+    font-size: 24px;
+
 /* nav bar spalva nepasikeicia,atkreipiti dms,istrinti papildomas color komandas */
     
     
     margin: 0;
     padding: 0;
 }
+.nav-scrolled{
+    color:#d1d1d1;
+}
 .menu{
     color: #44565b;
-    font-size: 24px;
 }
 
 nav{
@@ -48,10 +54,17 @@ nav ul li {
     color: #89a3a0;
 }
 
-.menu li a:onclick{
+
+.active{
     color: #89a3a0;
 }
+.section2.active{
+    color: #d1d1d1;
+}
 
+
+
+/* active link greiciausiai su js,yra youtube issaugota  su jquery*/
 /*font size random, logo irgi random, reikes pastumdyti dydzius.spalv nepasikeite*/
 li a{
     color: #44565b;
