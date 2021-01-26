@@ -12,7 +12,7 @@
 
 body{
     height: 100vh;
-    margin:0 auto;
+    margin:0;
     font-family: 'coolvetica', 'Verdana', 'Arial';
     background-color: #d1d1d1;
     
@@ -21,20 +21,10 @@ body{
 ul{
     list-style-type: none;
     text-decoration: none;
-    color: #44565b;
-    font-size: 24px;
-
-/* nav bar spalva nepasikeicia,atkreipiti dms,istrinti papildomas color komandas */
-    
-    
+   
+/* nav bar spalva nepasikeicia,atkreipiti dms,istrinti papildomas color komandas */  
     margin: 0;
     padding: 0;
-}
-.nav-scrolled{
-    color:#d1d1d1;
-}
-.menu{
-    color: #44565b;
 }
 
 nav{
@@ -48,12 +38,16 @@ nav ul li {
     display: inline-block;
     height: 100%;
     padding: 13px;
-    
-}
-.menu li a:hover{
-    color: #89a3a0;
 }
 
+li a{
+    color: #44565b;
+    font-size: 24px;
+}
+
+li a:hover{
+    color: #89a3a0;
+}
 
 .active{
     color: #89a3a0;
@@ -62,15 +56,13 @@ nav ul li {
     color: #d1d1d1;
 }
 
-
+.nav-scrolled{
+    color:#d1d1d1;
+}
 
 /* active link greiciausiai su js,yra youtube issaugota  su jquery*/
 /*font size random, logo irgi random, reikes pastumdyti dydzius.spalv nepasikeite*/
-li a{
-    color: #44565b;
 
-
-}
 a{
     text-decoration: none;
 }
@@ -216,7 +208,7 @@ Sita dalis is online mentor web tutorial. bet maciau html faile animation js pri
     background-image: url(home.jpg);
     background-color: #d1d1d1;
     max-height: 100vh;
-    height: 100% 
+    height: 100%;
 
 }
 
@@ -224,13 +216,14 @@ Sita dalis is online mentor web tutorial. bet maciau html faile animation js pri
     background-image: url(mystory.jpg);
     background-color: #9aa6a6;
     max-height: 100vh;
-    height: 100%
+    height: 100%;
 }
 
 .subtitle{
     font-size: 65px;
     color: #5c7878;
     padding: 0.5em 2em;
+    margin-top: 0;
 
 }
 
@@ -461,6 +454,7 @@ Sita dalis is online mentor web tutorial. bet maciau html faile animation js pri
     font-size: 65px;
     color: #d1d1d1;
     padding: 0.5em 2em;
+    margin-top: 0;
     
 }
 
