@@ -7,15 +7,16 @@
     <!-- Naršyklės ikonėlė, kurią reiks pakeisti kažkuo-->
     <link rel="icon" type="image/png" href="C:\Users\urbon\OneDrive\Desktop\GitHub\personal-website\images\logo2.png">
     <link rel="stylesheet" type="text/css" href="C:\Users\urbon\OneDrive\Desktop\GitHub\personal-website\main.css">
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-    <script src="C:\Users\urbon\OneDrive\Desktop\GitHub\personal-website\jquery.mousewheel.min"></script>
    
+
+  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="C:\Users\urbon\OneDrive\Desktop\GitHub\personal-website\jquery.mousewheel.min"></script>
+  -->
 </head>
 
 <body>
 
-<div id="main" class="home-container"> <!-- del sito dar reikia pasiaiskinti, 
+<div id="main" class="home-container scrolify"> <!-- del sito dar reikia pasiaiskinti, 
     nes pas ciuvaka header reikalauja dvigubo stylingo,
      tai man galimai sitos eilutes nereikia
      (apacioj nuimt </div> jei nereik) 
@@ -69,7 +70,7 @@
  </section>
 </div>
 
-<section id= "mystory" class="about"> <!-- sioje skiltyje nekuriau atskiro div fonui-->
+<section id= "mystory" class="about scrolify"> <!-- sioje skiltyje nekuriau atskiro div fonui-->
     
     <p class="subtitle"> / My story </p>
     <div class="about-text"> 
@@ -88,8 +89,8 @@
     
 </section>
 
-<section id="skills" class="skills">
-    <p class="subtitle"> / Skills </p>
+<section id="skills" class="skills scrolify">
+    <p class=" subt subtitle"> / Skills </p>
 
     <div class="skills-left-container">
         <!-- list of skills( design course mazdaug 1:07:00)-->
@@ -135,8 +136,8 @@
     </div>
 </section>
 
-<section id="portfolio" class="portfolio">
-    <p class="subtitle2"> / Portfolio</p>
+<section id="portfolio" class="portfolio scrolify">
+    <p class=" subt subtitle2"> / Portfolio</p>
 
     <div class="portfolio-container">
         
@@ -150,7 +151,7 @@
     </div>
 </section>
 
-<section id="contact" class="contact">
+<section id="contact" class="contact scrolify">
     <p class="subtitle2"> / Contact </p>
         
     <div class="contact-container">
@@ -192,6 +193,11 @@
         
     </div>
 </section>
+
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="jquery.scrollify.js"></script>
+
 <script src="action.js"></script>
 
 

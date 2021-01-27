@@ -68,7 +68,68 @@ function onScroll(event){
     })
   })
 
-    
+
+//scrollify. plius animation efektai on scroll
+  $(function() {
+    $.scrollify({
+      section : ".scrolify",
+      before: function(section){
+        if(section===0){
+          $("h1").addClass("in-left");
+          $(".wannabe").addClass("in-left");
+          $(".profile-pic").addClass("fade-in");
+          $("#scrolldown").addClass("fade-in");
+        }
+        if(section!==0){
+          $("h1").removeClass("in-left");
+          $(".wannabe").removeClass("in-left");
+          $(".profile-pic").removeClass("fade-in");
+          $("#scrolldown").removeClass("fade-in");
+        }
+
+        if(section===1){
+          $(".subtitle").addClass("in-left");
+          $(".about-text").addClass("in-down");
+        }
+        if(section!==1){
+          $(".about-text").removeClass("in-down");
+          $(".subtitle").removeClass("in-left");
+        }
+       if(section===2){
+          $(".subt").addClass("in-left");
+          $(".skills-left-container").addClass("fade-in");
+          $(".skills-right-container").addClass("fade-in"); 
+       }
+       if(section!==2){
+          $(".subt").removeClass("in-left");
+          $(".skills-left-container").removeClass("fade-in");
+          $(".skills-right-container").removeClass("fade-in");
+       }
+      if(section===3){
+        $(".subtitle2").addClass("in-left");
+        $(".description3").addClass("in-down");
+      }
+      if(section!==3){
+        $(".subtitle2").removeClass("in-left");
+        $(".description3").removeClass("in-down"); 
+      }
+      if(section===4){
+        $(".postcard").addClass("in-down");
+        //$(".contact-left").addClass("in-left");
+        $(".subtitle2").addClass("in-left");
+      }
+      if(section!==4){
+        $(".postcard").removeClass("in-down");
+        //$(".contact-left").removeClass("in-left");
+        $(".subtitle2").removeClass("in-left");
+      }
+      }
+    });
+  });
+ 
+
+
+/*    
 //--- DEFINE a reusable animation function: ---//
 function scrollThere(targetElement, speed) {
   // initiate an animation to a certain page element:
@@ -175,7 +236,7 @@ $(window).on('mousewheel', function(e) {
 }); // end on mousewheel event
 //--- END SCROLL EVENTS ---//
 
-
+*/
 
 /*
     //navbar spalvos keitimas on scroll.sita reiks istrint,nes virsutinis labiau veikia
